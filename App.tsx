@@ -11,7 +11,7 @@ import SplashScreen from 'react-native-splash-screen';
 import { SafeAreaView, ScrollView,StatusBar, StyleSheet, Text,useColorScheme,View,} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import FirstPage from "./src/screen/FirstPage";
+import AuthPage from "./src/screen/AuthPage";
 
 
 import {
@@ -39,8 +39,8 @@ function App(): JSX.Element {
     //     backgroundColor={backgroundStyle.backgroundColor}
     //   />
     <NavigationContainer>
-    <Stack.Navigator>
-        <Stack.Screen name="First" component={FirstPage} />
+    <Stack.Navigator screenOptions={{headerShown:false}}>
+        <Stack.Screen name="First" component={AuthPage}  />
       </Stack.Navigator>
     </NavigationContainer>
   

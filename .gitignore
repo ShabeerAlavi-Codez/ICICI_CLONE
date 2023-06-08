@@ -3,6 +3,7 @@
 .DS_Store
 ref/
 android/app/build
+src/assets/
 
 # Xcode
 #
