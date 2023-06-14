@@ -30,7 +30,10 @@ function App(): JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
   useEffect(() => {
-    SplashScreen.hide(); //hides the splash screen on app load.
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 1000);
+     //hides the splash screen on app load.
   }, []);
   return (
     // <SafeAreaView style={backgroundStyle}>
